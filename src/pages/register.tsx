@@ -30,7 +30,7 @@ const REGISTER_MUT = `
 }
 `;
 
-const Register: React.FC<registerProps> = ({}) => {
+function Register({}) {
   const [, register] = useMutation(REGISTER_MUT);
   return (
     <Wrapper variant="small">
@@ -70,6 +70,6 @@ const Register: React.FC<registerProps> = ({}) => {
       </Formik>
     </Wrapper>
   );
-};
+}
 
 export default Register;
