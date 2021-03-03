@@ -12,11 +12,7 @@ type InputFieldProps = $ElementProps<typeof Input> & {
   name: string;
 };
 
-export const InputField: React.FC<InputFieldProps> = ({
-  label,
-  size: _,
-  ...props
-}) => {
+export function InputField({ label, ...props }: InputFieldProps) {
   const [field, { error }] = useField(props);
   return (
     <FormControl isInvalid={!!error}>
@@ -25,4 +21,4 @@ export const InputField: React.FC<InputFieldProps> = ({
       {error ? <FormErrorMessage>{error}</FormErrorMessage> : null}
     </FormControl>
   );
-};
+}
