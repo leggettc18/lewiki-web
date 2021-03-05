@@ -7,8 +7,6 @@ import { useRegisterMutation } from "../generated/graphql";
 import { toErrorMap } from "../utils/toErrorMap";
 import { useRouter } from "next/router";
 
-interface registerProps {}
-
 function Register({}) {
   const router = useRouter();
   const [, register] = useRegisterMutation();
