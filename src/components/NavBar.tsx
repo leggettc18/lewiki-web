@@ -25,14 +25,12 @@ export const NavBar = ({}) => {
     body = (
       <Flex>
         <Box mr={2}>{data.me.username}</Box>
-        <Button variant="link" color="black">
-          Logout
-        </Button>
+        <Button variant="link">Logout</Button>
       </Flex>
     );
   }
   return (
-    <Flex bg="tan" p={4}>
+    <Flex bg="purple" color="white" p={4}>
       <Box ml={"auto"}>{body}</Box>
     </Flex>
   );
